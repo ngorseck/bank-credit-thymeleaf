@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns="http://www.w3.org/1999/html"
+      layout:decorate="/home">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ajout de client</title>
+    </head>
+    <body>
+    <div layout:fragment="content">
+        <!-- graph -->
+        <div class="row column2 graph margin_bottom_30">
+            <div class="col-md-l2 col-lg-12">
+                <div class="white_shd full">
+                    <div class="full graph_head">
+                        <div class="heading1 margin_0">
+                            <h2>Formulaire d'ajout des clients</h2>
+                        </div>
+                    </div>
+                    <div class="full graph_revenue">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="content">
+                                    <div class="area_chart">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="control-label">Nom</label>
+                                                <input class="form-control" type="text" name="nom" id="nom" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Prenom</label>
+                                                <input class="form-control" type="text" name="prenom" id="prenom" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input class="form-control" type="email" name="email" id="email" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Telephone</label>
+                                                <input class="form-control" type="tel" name="telephone" id="telephone" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="btn btn-success" type="submit" name="envoyer" id="envoyer" value="Envoyer" />
+                                                <input class="btn btn-danger" type="reset" name="annuler" id="annuler" value="Annuler" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
